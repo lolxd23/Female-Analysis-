@@ -1,5 +1,5 @@
 ---
-title: "Project Instruction"
+title: "Project"
 output: html_document
 date: "2024-06-12"
 ---
@@ -8,34 +8,11 @@ date: "2024-06-12"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Project Report-Draft
-June 12, 2024
-1 Aim of Final Report
-This report needs to do the statistical analysis of a real data set. You need to formulate the question, build the model, and then interpret the results.
-Your methods should include the linear model at least.
-You have two options for the data set. 1: use the data I provided; 2: choose the data by yourself (need my permission). And you could come to my office hour to have a discussion with me.
-The due is July 1 (The end of the Summer session).
-2 Page Report Format
-
 ### 2.1 Title
 
 The title of the report and the name of the student.
 Hajara Eve Muzammal
 An Investigation of Body Fat and Anthropometric Measurements in Females 25–30 Years of Age
-
-
-
-
-### 2.2 Abstract
-
-A summary of the project. You need to indicate the data set, the finding, and the results.
-
-This study thoroughly examines the association between body fat percentage and three anthropometric measurements—thigh circumference, midarm circumference, and triceps skinfold thickness—using a dataset of twenty females between the ages of 25 and 30. The data are summarized using descriptive statistics and visualizations, and then the prediction potential of the anthropometric variables on body fat % is investigated using multiple linear regression analysis. The results show a strong link between the variables, shedding light on the determinants affecting young girls' body fat.
-
-### 2.3 Introduction
-
-Creating effective health and fitness treatments requires understanding the elements that affect body fat percentage. In females between the ages of 25 and 30, this study looks into the relationship between body fat % and three necessary anthropometric measurements: triceps skinfold thickness, thigh circumference, and midarm circumference. The following particular research questions are addressed:
-What is the relationship between body fat percentage and triceps skinfold thickness, thigh circumference, and midarm circumference?
 
 
 ### 2.4 Description of data
@@ -91,22 +68,8 @@ par(mfrow = c(2, 2))
 plot(model)
 
 ```
-This is for 2.5: 
-A multivariate linear regression model examines the association between body fat % and the three anthropometric measurements.
-Final model- y= -32.33+.83x1+.52x2+.03x3
-
-Evaluating the Results 
-Significant Predictors: According to the regression model, the body fat percentage (y) can be significantly predicted by the triceps skinfold thickness (x1) and thigh circumference (x2), with incredibly low p-values (<2e-16) providing strong evidence against the null hypothesis. This implies that body fat % rises in tandem with changes in triceps skinfold thickness and thigh circumference.
-Model Fit: The multiple R-squared value of 0.9988 and the adjusted R-squared value of 0.9985 show that the model fits the data extremely well, explaining a significant amount of the variance in body fat %. This implies that the three predictors work well together to match the data.
-Diagnostics and Assumptions
-Residuals vs Fitted Plot: This indicates that the linearity condition is satisfied because the residuals should be distributed randomly around the horizontal line.
-Q-Q Plot: Suggest a typical distribution of the residuals.
-Plotting Scale: This plot determines whether data is homoscedastic. Equal distribution of the residuals throughout the predictor ranges is required.
 
 
-### 2.6 Conclusion
-
-This study shows that, in girls aged 25 to 30, triceps skinfold thickness and thigh circumference are significant predictors of body fat percentage, whereas midarm circumference is not. There is a perfect correlation between the predictors and the response variable, as the model explains 99.88% of the variance in body fat percentage. The diagnostic plots validate the appropriateness of the model by supporting the assumptions of linearity, normalcy, and homoscedasticity. Future studies might investigate other factors and bigger sample sizes to strengthen the model's prediction ability and further validate these results.
 
 ## 3 Data Set
 
